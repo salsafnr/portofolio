@@ -1,0 +1,18 @@
+---
+title: "Fan Motor Vibration Soft Sensor"
+description: "A linear-regression soft sensor that validates over-limit vibration readings before an automatic plant shutdown."
+techStack: ["Linear Regression", "Correlation Analysis", "DCS"]
+duration: "2026"
+---
+
+## Problem
+
+A false vibration reading can trigger an automatic shutdown, and restarting the plant is costly.
+
+## Solution
+
+I estimated each of the 4 vibration points from the other three, using their mechanical coupling. A validation logic cross-checks an over-limit sensor against its estimate and its neighboring sensors.
+
+## Result
+
+Implemented in the DCS, with approximately 6% error versus live readings in real-time spot checks.
