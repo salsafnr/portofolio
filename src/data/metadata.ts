@@ -26,16 +26,6 @@ export const siteMetadata = {
     instagram: "salsalfnr", // CV has none
   },
   ogImage: null, // use the auto-generated Open Graph image
-},
-
-  /**
-   * Optional: Custom Open Graph image for the index (home) page.
-   * Set this to the path of an image in your public folder (e.g. "/og-image.png").
-   * Set to null to use the auto-generated dynamic OG image instead.
-   *
-   * Note: /blog, /projects, and /work always use dynamically generated OG images.
-   */
-  ogImage: null,
 }
 
 /**
