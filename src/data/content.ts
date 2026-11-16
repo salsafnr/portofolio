@@ -75,7 +75,7 @@ export const homeIntroConfig = {
    * having a multiple of 2 for better grid layout (e.g., 2 or 4).
    */
   projectsToShow: 4,
-  blogPostToShow: 3,
+  blogPostsToShow: 3,
 }
 
 /**
@@ -93,7 +93,7 @@ export const paginationConfig = {
    * This number must be a number greater than zero.
    */
   projectsPerPage: 6,
-  blogPostPerPage: 6,
+  blogPostsPerPage: 6,
 }
 
 /**
