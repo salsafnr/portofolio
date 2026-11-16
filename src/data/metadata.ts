@@ -5,58 +5,28 @@ import type { Metadata } from "next"
  * Site metadata configuration
  * Customize this file with your own information for SEO and social media sharing
  */
-export const siteMetadata: SiteMetadata = {
-  /**
-   * Accent color theme for the portfolio.
-   * Options: "blue" | "purple" | "green" | "orange" | "rose" | "teal" | "indigo" | "amber" | "cyan" | "violet" | "pink" | "lime"
-   * The chosen theme controls the accent color used across all components.
-   */
+export const siteMetadata = {
   theme: "blue",
-
-  /**
-   * Site title (shown in browser tabs and search results)
-   */
-  title: "Next.js Developer Portfolio Template",
-
-  /**
-   * Site description (shown in search results and social media)
-   */
+  title: "Nur Alifah Salsabila | Engineering Physics Graduate",
   description:
-    "Developer portfolio showcasing projects, work experience, and technical blog posts. Built with Next.js, TypeScript, and Tailwind CSS.",
-
-  /**
-   * Keywords for SEO
-   */
+    "Portfolio of Nur Alifah Salsabila, an Engineering Physics graduate working on sensors, condition monitoring, and plant digitalization in cement manufacturing.",
   keywords: [
-    "Developer",
-    "Software Engineer",
-    "Next.js",
-    "React",
-    "TypeScript",
-    "Web Development",
-    "Portfolio",
+    "Nur Alifah Salsabila", "Engineering Physics", "Gadjah Mada University", "UGM", "Universitas Gadjah Mada",
+    "Condition Monitoring", "Vibration Monitoring",
+    "Plant Digitalization", "Data Engineer", "Data Analyst",
+    "Instrumentation",
+    "Application Engineer", "Instrument Engineer", "Electrical Engineer",
   ],
-
-  /**
-   * Author information
-   */
   author: {
-    name: "Alexandru Moraru",
-    url: "https://alexradumoraru.com",
+    name: "Nur Alifah Salsabila",
+    url: "https://YOUR-DOMAIN-HERE", // TODO: your deployed URL
   },
-
-  /**
-   * Base URL of your website (used for canonical URLs and Open Graph).
-   * Set NEXT_PUBLIC_SITE_URL in your environment (e.g. .env.local) to override the default.
-   */
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://nextjs-portofolio-website.vercel.app",
-
-  /**
-   * Social media handles
-   */
+  siteUrl: "https://YOUR-DOMAIN-HERE", // TODO: must match your real domain
   social: {
-    twitter: "@alexradumoraru",
+    instagram: "salsalfnr", // CV has none
   },
+  ogImage: null, // use the auto-generated Open Graph image
+},
 
   /**
    * Optional: Custom Open Graph image for the index (home) page.
