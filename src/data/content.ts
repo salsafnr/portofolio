@@ -30,7 +30,7 @@ export const homeIntroConfig = {
    */
   name: "Nur Alifah Salsabila",
   shortName: "Salsa",
-  
+
   /**
    * Introduction paragraphs (can be multiple)
    */
@@ -75,6 +75,10 @@ export const homeIntroConfig = {
    * having a multiple of 2 for better grid layout (e.g., 2 or 4).
    */
   projectsToShow: 4,
+
+  /**
+   * Still required by the template code until the blog is removed.
+   */
   blogPostsToShow: 3,
 }
 
@@ -93,6 +97,10 @@ export const paginationConfig = {
    * This number must be a number greater than zero.
    */
   projectsPerPage: 6,
+
+  /**
+   * Still required by the template code until the blog is removed.
+   */
   blogPostsPerPage: 6,
 }
 
@@ -117,17 +125,17 @@ export const footerConfig = {
    * Simply add your URLs below. Leave empty ("") to hide a social link.
    */
   socialLinks: {
-    github: "http://github.com/salsafnr",
+    github: "https://github.com/salsafnr",
     linkedin: "https://linkedin.com/in/nur-alifah-salsabila",
     email: "salsabila.nrlf@gmail.com",
-    goodreads: "/",
-    instagram: "/",
-    twitter: "/",
-    reddit: "/",
-    dribbble: "/",
-    youtube: "/",
-    bluesky: "/",
-    stackoverflow: "/",
+    goodreads: "",
+    instagram: "https://instagram.com/salsalfnr",
+    twitter: "",
+    reddit: "",
+    dribbble: "",
+    youtube: "",
+    bluesky: "",
+    stackoverflow: "",
   } as Record<SocialPlatform, string>,
 }
 
