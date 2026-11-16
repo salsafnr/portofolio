@@ -28,20 +28,15 @@ export const homeIntroConfig = {
   /**
    * Your full name (used in breadcrumbs, footer, and other places)
    */
-  name: "John Doe",
-
-  /**
-   * Your short/first name (optional - used in "Hi, I'm..." greeting)
-   * If not provided, the full name will be used
-   */
-  shortName: "John",
-
+  name: "Nur Alifah Salsabila",
+  
   /**
    * Introduction paragraphs (can be multiple)
    */
   introParagraphs: [
-    "I'm a software engineer passionate about solving problems, building things, and reading sci-fi. Whenever I'm not coding, you can find me exploring the world, playing tennis or skating. I love to share my knowledge and experiences through my blog, where I write about tech, books, and life lessons.",
-    "I am currently working at Hypernova Labs as a software engineer, where I focus on building scalable applications and improving user experiences. I have a keen interest in full-stack development, particularly in React and Node.js. I enjoy collaborating with cross-functional teams to deliver high-quality software solutions.",
+    "I'm an Engineering Physics graduate from Universitas Gadjah Mada with hands-on experience in sensors, condition monitoring, and plant digitalization.",
+    "At a cement manufacturer I work directly with technicians and engineers to build monitoring and record-keeping systems, from motor vibration dashboards to a soft sensor that runs inside the DCS.",
+    "I'm looking for an application engineer or technical sales role.",
   ],
 
   /**
@@ -49,11 +44,11 @@ export const homeIntroConfig = {
    * Fill in the fields below. Leave empty ("") to hide a fact.
    */
   facts: {
-    company: "Hypernova Labs",
-    education: "Computer Science Grad @ VuA",
-    location: "Lille, France",
-    languages: "EN / ES / DE",
-    role: "Full-Stack Dev",
+    company: "PT Solusi Bangun Indonesia Tbk",
+    education: "Universitas Gadjah Mada (Engineering Physics)",
+    location: "Tuban, Indonesia",
+    languages: "IDN, EN",
+    role: "Electrical Instrument Technician",
   },
 
   /**
@@ -61,11 +56,7 @@ export const homeIntroConfig = {
    * Add any extra facts you want to display with their icons.
    * You must use an icon from react-icons and provide its label.
    */
-  additionalFacts: [
-    { icon: FaBook, label: "Book Reviewer" },
-    { icon: FaGamepad, label: "Sci-fi Fan" },
-    { icon: FaSkiing, label: "Skiing Enthusiast" },
-  ] as Array<{ icon: IconType; label: string }>,
+  additionalFacts: [] as { icon: string; label: string }[],
 
   /**
    * Number of work items to show in the preview sections on the home page.
@@ -83,27 +74,12 @@ export const homeIntroConfig = {
    * having a multiple of 2 for better grid layout (e.g., 2 or 4).
    */
   projectsToShow: 4,
-
-  /**
-   * Number of blog posts and projects to show in the preview sections on the home page.
-   * Note that the actual number shown may be less if there aren't enough items.
-   * If the actual number of items is larger than this, a "View All" link will be displayed.
-   * This number must be a number greater than zero. We recommend keeping it low (=3) and
-   * having a multiple of 3 for better grid layout.
-   */
-  blogPostsToShow: 3,
 }
 
 /**
  * Configuration for pagination settings within the site.
  */
 export const paginationConfig = {
-  /**
-   * Number of blog posts to show per page for "/blog" and "/blog?page=n" routes.
-   * This number must be a number greater than zero.
-   */
-  blogPostsPerPage: 5,
-
   /**
    * Number of work items to show per page for "/work" and "/work?page=n" routes.
    * This number must be a number greater than zero.
@@ -124,7 +100,7 @@ export const footerConfig = {
   /**
    * Name displayed in the copyright notice
    */
-  copyrightName: "John Doe",
+  copyrightName: "Nur Alifah Salsabila",
 
   /**
    * Show version and attribution section
@@ -138,8 +114,9 @@ export const footerConfig = {
    * Simply add your URLs below. Leave empty ("") to hide a social link.
    */
   socialLinks: {
-    github: "/",
-    linkedin: "/",
+    github: "http://github.com/salsafnr",
+    linkedin: "https://linkedin.com/in/nur-alifah-salsabila",
+    email: "salsabila.nrlf@gmail.com",
     goodreads: "/",
     instagram: "/",
     twitter: "/",
@@ -148,7 +125,6 @@ export const footerConfig = {
     youtube: "/",
     bluesky: "/",
     stackoverflow: "/",
-    email: "contact@example.com",
   } as Record<SocialPlatform, string>,
 }
 
