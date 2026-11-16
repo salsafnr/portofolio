@@ -5,7 +5,7 @@ import type { Metadata } from "next"
  * Site metadata configuration
  * Customize this file with your own information for SEO and social media sharing
  */
-export const siteMetadata = {
+export const siteMetadata: SiteMetadata = {
   theme: "blue",
   title: "Nur Alifah Salsabila | Engineering Physics Graduate",
   description:
@@ -19,11 +19,11 @@ export const siteMetadata = {
   ],
   author: {
     name: "Nur Alifah Salsabila",
-    url: "https://YOUR-DOMAIN-HERE", // TODO: your deployed URL
+    url: "https://portofolio-salsafnr.vercel.app", // TODO: your deployed URL
   },
-  siteUrl: "https://YOUR-DOMAIN-HERE", // TODO: must match your real domain
+  siteUrl: "https://portofolio-salsafnr.vercel.app", // TODO: must match your real domain
   social: {
-    instagram: "salsalfnr", // CV has none
+    twitter: "", // CV has none
   },
   ogImage: null, // use the auto-generated Open Graph image
 }
