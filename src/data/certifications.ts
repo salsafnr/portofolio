@@ -5,6 +5,7 @@ export interface Credential {
   issuer: string
   date: string
   type: CredentialType
+  url?: string
 }
 
 // Newest first.
