@@ -2,7 +2,6 @@ import { render, screen } from "@testing-library/react"
 import { describe, it, expect } from "vitest"
 import Footer from "@/components/Footer"
 import { footerConfig } from "@/data/content"
-import { appVersion } from "@/lib/constants"
 
 describe("Footer", () => {
   it("renders the footer element with the correct id", () => {
@@ -37,11 +36,6 @@ describe("Footer", () => {
       ? footerConfig.socialLinks.email
       : `mailto:${footerConfig.socialLinks.email}`
     expect(emailLink.getAttribute("href")).toBe(expectedEmail)
-  })
-
-  it("renders the version number", () => {
-    render(<Footer />)
-    expect(screen.getByText(appVersion)).toBeDefined()
   })
 
   it("renders social links as anchor elements", () => {

@@ -2,7 +2,7 @@ import HomeContent from "@/components/home/HomeContent"
 import JsonLd from "@/components/JsonLd"
 import { footerConfig, homeIntroConfig } from "@/data/content"
 import { siteMetadata } from "@/data/metadata"
-import { getAllBlogPosts, getAllProjects, getAllWorkItems } from "@/lib/mdx"
+import { getAllProjects, getAllWorkItems } from "@/lib/mdx"
 import type { Person, WithContext } from "schema-dts"
 
 /**
@@ -14,11 +14,7 @@ import type { Person, WithContext } from "schema-dts"
  * The "sameAs" property includes links to social media profiles, which can help search engines understand the author's online presence.
  */
 export default async function Home() {
-  const [blog, work, projects] = await Promise.all([
-    getAllBlogPosts(),
-    getAllWorkItems(),
-    getAllProjects(),
-  ])
+  const [work, projects] = await Promise.all([getAllWorkItems(), getAllProjects()])
 
   const sameAs = Object.values(footerConfig.socialLinks).filter(url => url && url !== "/")
 
@@ -35,7 +31,7 @@ export default async function Home() {
   return (
     <>
       <JsonLd data={jsonLd} />
-      <HomeContent blog={blog} work={work} projects={projects} />
+      <HomeContent work={work} projects={projects} />
     </>
   )
 }

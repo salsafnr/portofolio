@@ -41,13 +41,13 @@ export default function WorkItem({
         <div className="flex items-center">
           {/* Company Logo */}
           {logoUrl && (
-            <div className="mr-4 flex items-center">
+            <div className="mr-3 sm:mr-4 flex shrink-0 items-center">
               <Image
                 src={logoUrl}
                 alt={`${company} logo`}
-                width={25}
-                height={25}
-                className="rounded-sm h-[25px] w-auto"
+                width={120}
+                height={120}
+                className="h-7 w-auto sm:h-9 md:h-11 rounded-sm object-contain"
               />
             </div>
           )}

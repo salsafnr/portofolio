@@ -1,11 +1,8 @@
 import { IconType } from "react-icons"
 import {
   FaMapMarkerAlt,
-  FaBook,
   FaLanguage,
-  FaGamepad,
   FaUniversity,
-  FaSkiing,
   FaBuilding,
   FaTools,
   FaGithub,
@@ -35,9 +32,10 @@ export const homeIntroConfig = {
    * Introduction paragraphs (can be multiple)
    */
   introParagraphs: [
-    "I'm an Engineering Physics graduate from Universitas Gadjah Mada with hands-on experience in sensors, condition monitoring, and plant digitalization.",
-    "At a cement manufacturer I work directly with technicians and engineers to build monitoring and record-keeping systems, from motor vibration dashboards to a soft sensor that runs inside the DCS.",
-    "I'm looking for an application engineer or technical sales role.",
+    "I turn traditional factory process into Industry 4.0 operations, so teams can stop guessing and start making data-driven decision.",
+    "Working in the Maintenance Departement at a Cement Manufacturer, I build practical innovations that connect operational systems while keeping a eyes on bussines impact. I focus on designing solution that fit into daily workflows.",
+    "Engineering isn't just about what system can do, its about whether it makes financial sense and actually gets used",
+    "Outside of work, you'll find me cycling, exploring new recipes, or watching a movie.",
   ],
 
   /**
@@ -46,10 +44,10 @@ export const homeIntroConfig = {
    */
   facts: {
     company: "PT Solusi Bangun Indonesia Tbk",
-    education: "Universitas Gadjah Mada (Engineering Physics)",
-    location: "Tuban, Indonesia",
-    languages: "IDN, EN",
     role: "Electrical Instrument Technician",
+    location: "Tuban, Indonesia",
+    education: "Universitas Gadjah Mada (Engineering Physics)",
+    languages: "IDN, EN",
   },
 
   /**
@@ -118,7 +116,7 @@ export const footerConfig = {
    * Set to true if you want to hide the "built by @alemoraru" attribution and version number.
    * By default, this is true to give credit to the template creator, but you can disable it if desired.
    */
-  showVersionAndAttribution: true,
+  showVersionAndAttribution: false,
 
   /**
    * Social media links

@@ -6,16 +6,25 @@ import type { Metadata } from "next"
  * Customize this file with your own information for SEO and social media sharing
  */
 export const siteMetadata: SiteMetadata = {
-  theme: "blue",
+  theme: "pink",
   title: "Nur Alifah Salsabila | Engineering Physics Graduate",
   description:
     "Portfolio of Nur Alifah Salsabila, an Engineering Physics graduate working on sensors, condition monitoring, and plant digitalization in cement manufacturing.",
   keywords: [
-    "Nur Alifah Salsabila", "Engineering Physics", "Gadjah Mada University", "UGM", "Universitas Gadjah Mada",
-    "Condition Monitoring", "Vibration Monitoring",
-    "Plant Digitalization", "Data Engineer", "Data Analyst",
+    "Nur Alifah Salsabila",
+    "Engineering Physics",
+    "Gadjah Mada University",
+    "UGM",
+    "Universitas Gadjah Mada",
+    "Condition Monitoring",
+    "Vibration Monitoring",
+    "Plant Digitalization",
+    "Data Engineer",
+    "Data Analyst",
     "Instrumentation",
-    "Application Engineer", "Instrument Engineer", "Electrical Engineer",
+    "Application Engineer",
+    "Instrument Engineer",
+    "Electrical Engineer",
   ],
   author: {
     name: "Nur Alifah Salsabila",

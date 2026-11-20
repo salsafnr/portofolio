@@ -1,21 +1,46 @@
 ---
 title: "Electrical Instrument Technician"
 company: "PT Solusi Bangun Indonesia Tbk"
+logoUrl: "/logos/sbi.png"
 role: "Electrical Instrument Technician"
-description: "Software and digitalization projects for the maintenance department of a cement manufacturer under the SIG Group."
+description: "PT Solusi Bangun Indonesia Tbk, formerly known as PT Holcim Indonesia Tbk, is a cement manufacturer under the SIG Group with Dynamix as its product."
 period: "Nov 2025 - Present"
 start: "2025-11"
 end: "Present"
-locations: ["Tuban, Indonesia"]
+locations: ["Tuban, East Java, Indonesia"]
+techStack:
+  - Node.js
+  - PHP
+  - MySQL
+  - ESP32
+  - Python
 ---
 
-## Overview
+## Roles
 
-PT Solusi Bangun Indonesia Tbk is a cement manufacturer under the SIG Group. I build software and digitalization projects for the maintenance department.
+<Timeline>
+    <TimelineItem
+        title="Electrical Instrument Technician"
+        duration="11/2025 - Present"
+        location="Tuban, East Java, Indonesia"
+    >
+        - Part of Maintenance department, working on build software and doing digitalization to support the the transition to Industry 4.0.
+    </TimelineItem>
+
+    <TimelineItem
+        title="Instrumen Engineer (Internship)"
+        duration="01/2024 - 01/2024"
+        location="Tuban, East Java, Indonesia"
+    >
+        - Analyzed plant data to quantify the impact of a mechanical roller modification on a cement mill, achieving 4.7% increase in production rate and 3.7% reduction in energy cost.
+        - Gained knowledge of cement manufacturing process by interpreting Process Flow Diagram (PFD) and Piping and Instrumentation (P&ID) to map material flows and equipment sequences.
+    </TimelineItem>
+</Timeline>
 
 ## What I did
 
-- Built 3 PHP/MySQL web applications: a motor condition monitoring system (vibration, envelope, temperature, grease, about 200 motors registered) with a self-built WhatsApp alert bot; digital calibration forms replacing a paper-based process; and a training record system for 90+ maintenance staff.
-- Introduced the applications to maintenance staff and actively sought out users for feedback and suggestions to refine the features.
-- Developed a linear-regression soft sensor that estimates fan motor vibration readings from correlated sensors. It has run in the DCS since March 2026 to check suspicious over-limit readings before an automatic shutdown, which is costly to restart from.
-- Built a vibration monitoring prototype covering the full chain from sensor signal to ESP32 acquisition, Python analysis software, and alerts, working with the electrical instrumentation engineer who designed the signal-conditioning hardware.
+- Built 3 data-driven web applications (PHP/MySQL) with dashboards, trend-analysis charts, and automated report generation: a motor condition monitoring system covering about 200 motors, digital calibration forms replacing a paper-based process, and a training record system for over 90 maintenance staff. 
+- Facilitated the adoption of the developed application by maintenance staff, proactively soliciting user feedback and suggestions to enhance features.
+- Developed a linear-regression model that cross-checks sensor readings against correlated data, running in DCS since March 2026 to validate suspicious over-limit readings and avoid costly unnecessary plant shutdowns and restarts (about 6% error versus live readings). 
+- Built a self-developed alert system (Node.js, WhatsApp) utilizing open-source tools to eliminate paid messaging services, achieving zero-cost implementation and reducing operating expenses.
+- Designed an end-to-end monitoring prototype (ESP32 acquisition, Python analysis software, alerts) in collaboration with the electrical instrumentation engineer. 

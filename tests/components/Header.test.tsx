@@ -43,18 +43,15 @@ describe("Header", () => {
     // "Home" isn't part of the desktop nav - the site name/initials link already covers it
     expect(screen.getByText("Work")).toBeDefined()
     expect(screen.getByText("Projects")).toBeDefined()
-    expect(screen.getByText("Blog")).toBeDefined()
   })
 
   it("renders navigation links with correct hrefs", () => {
     renderHeader()
     const workLink = screen.getByText("Work").closest("a")
     const projectsLink = screen.getByText("Projects").closest("a")
-    const blogLink = screen.getByText("Blog").closest("a")
 
     expect(workLink?.getAttribute("href")).toBe("/work")
     expect(projectsLink?.getAttribute("href")).toBe("/projects")
-    expect(blogLink?.getAttribute("href")).toBe("/blog")
   })
 
   it("renders the theme toggle button", () => {

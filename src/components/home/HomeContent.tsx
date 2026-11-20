@@ -6,7 +6,7 @@ import {
   staggerContainerVariants,
   staggerItemVariants,
 } from "@/components/home/animations"
-import BlogPreview from "@/components/home/BlogPreview"
+import Certifications from "@/components/home/Certifications"
 import ProjectsPreview from "@/components/home/ProjectsPreview"
 import QuickFacts from "@/components/home/QuickFacts"
 import WorkPreview from "@/components/home/WorkPreview"
@@ -14,19 +14,19 @@ import { homeIntroConfig } from "@/data/content"
 import { BlogPostProps, ProjectProps, WorkItemProps } from "@/lib/types"
 
 interface HomeContentProps {
-  blog: BlogPostProps[]
+  /** Kept optional only so page.tsx still compiles. The blog section is no longer shown. */
+  blog?: BlogPostProps[]
   work: WorkItemProps[]
   projects: ProjectProps[]
 }
 
 /**
  * This component renders the main content of the home page, including the introduction section,
- * quick facts, work experience preview, projects preview, and blog posts preview.
- * @param blog - An array of blog post data to display in the blog preview section.
+ * quick facts, achievements and certifications, work experience preview, and projects preview.
  * @param work - An array of work experience data to display in the work preview section.
  * @param projects - An array of project data to display in the projects preview section.
  */
-export default function HomeContent({ blog, work, projects }: HomeContentProps) {
+export default function HomeContent({ work, projects }: HomeContentProps) {
   return (
     <MotionConfig reducedMotion="user">
       <section className="px-4 max-w-4xl mx-auto">
@@ -72,7 +72,7 @@ export default function HomeContent({ blog, work, projects }: HomeContentProps) 
         <QuickFacts />
         <WorkPreview work={work} />
         <ProjectsPreview projects={projects} />
-        <BlogPreview blog={blog} />
+        <Certifications />
       </section>
     </MotionConfig>
   )
