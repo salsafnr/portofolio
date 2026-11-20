@@ -32,9 +32,9 @@ export const homeIntroConfig = {
    * Introduction paragraphs (can be multiple)
    */
   introParagraphs: [
-    "I turn traditional factory process into Industry 4.0 operations, so teams can stop guessing and start making data-driven decision.",
+    "I turn traditional factory process into smart factory operation that support Industry 4.0, so teams can stop guessing and start making data-driven decision.",
     "Working in the Maintenance Departement at a Cement Manufacturer, I build practical innovations that connect operational systems while keeping a eyes on bussines impact. I focus on designing solution that fit into daily workflows.",
-    "Engineering isn't just about what system can do, its about whether it makes financial sense and actually gets used",
+    "Engineering isn't just about what a system can do, its about whether it makes financial sense and actually gets used",
     "Outside of work, you'll find me cycling, exploring new recipes, or watching a movie.",
   ],
 
